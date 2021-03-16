@@ -1,27 +1,26 @@
-import { createGlobalStyle, GlobalStyleComponent } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-    .App {
-        padding: 0.5rem calc((100vw - 1000px) / 2);
-    }
+ @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+  * {
+    margin: 0 ;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
 
-    * {
-        margin: 0;
-        padding: 0;
-        outline: 0;
-        
-    }
-    body {
-        -webkit-font-smoothing: antialiased;
-    }
-    body, input, button {
-        font: 16px Robot, sans-serif;
-    }
-    
-    button {
-        
-        cursor: pointer;
-    }
+  html, body, #root {
+    height: 100%;
+  } 
 
-    
+  body {
+    /* font: 14px 'Roboto', sans-serif; */
+    background: #ecf1f8;
+    color: #333;
+    -webkit-font-smoothing: antialiased !important;
+  }
+
+  ul {
+    list-style: none;
+  }
 `;

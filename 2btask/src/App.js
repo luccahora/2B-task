@@ -16,8 +16,6 @@ function App() {
           <PrivateRoute exact path="/" component={Home} />
         </BrowserRouter>
       </AuthProvider>
-
-      <GlobalStyle />
     </>
   );
 }

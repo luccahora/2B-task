@@ -9,7 +9,7 @@ const Navbar = () => {
         <Bars />
         <NavMenu>
           <NavLink to="/" activeStyle>
-            Início
+            2B Task
           </NavLink>
         </NavMenu>
         <NavBtn onClick={() => authConfig.auth().signOut()}>
