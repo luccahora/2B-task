@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
   position: relative;
@@ -24,6 +24,30 @@ export const Container = styled.div`
     border-radius: 2px;
     margin-top: 5px;
   }
+  ${(props) =>
+    props.isDragging &&
+    css`
+      border: 2px dashed rgba(0, 0, 0, 0.2);
+      padding-top: 31px;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      cursor: grabbing;
+      p,
+      img,
+      header {
+        opacity: 0;
+      }
+    `}
+`;
+
+export const Prioridade = styled.span`
+  font-size: 13px;
+  font-weight: bold;
+  color: rgb(54, 54, 54);
+  padding: 3px 5px;
+  border-radius: 40px;
+  background-color: rgb(172, 242, 214);
 `;
 
 export const Label = styled.span`

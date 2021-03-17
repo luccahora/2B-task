@@ -1,13 +1,13 @@
-import React from "react";
-import { Container, Label } from "./style";
+import React, { useRef, useContext } from "react";
+import { useDrag } from "react-dnd";
 
-export default function Card() {
+import { Container, Label, Prioridade } from "./style";
+
+export default function Card({ data }) {
   return (
     <Container>
-      <header>
-        <Label color="7159c1" />
-      </header>
-      <p>Fazer migracao completa</p>
+      <p>{data.content}</p>
+      <Prioridade>{data.priority}</Prioridade>
     </Container>
   );
 }
